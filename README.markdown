@@ -8,7 +8,6 @@ the need to precompile them first.
 
 For example, here's `includer.phn`:
 
-    ;includer.phn
     ;<?php require __DIR__ . '/../pharenheit.php'; return; ?>
 
     (require "includee.phn")
@@ -16,7 +15,6 @@ For example, here's `includer.phn`:
 
 ...and `includee.phn`:
 
-    ;includee.phn
     ;<?php require __DIR__ . '/../pharenheit.php'; return; ?>
 
     (fn greet-person (name)
@@ -30,16 +28,16 @@ Pharenheit can also tell when a file has changed and will automatically recompil
 
 In order to use Pharenheit, you need two things: `pharenheit.php` and the Pharenheit `.htaccess` file.  Place the
 `.htaccess` file at the root of your Pharen project.  You may also place the `pharenheit.php` file there, although
-its placement is not as important (just make sure you can require it).
+its placement is not as important (just make sure you can `require` it).
 
 In the `.htaccess` file, change the line
 
     SetEnv HTTP_PHAREN_HOME "E:\Apps\Pharen"
 
 ...to reflect the location of your Pharen install.  It needs to be the directory where `pharen.php` is.  Alternatively,
-you can set the environment variables `PHAREN_HOME`.
+you can set the environment variable `PHAREN_HOME`.
 
-At the top of all your Pharen source files, place the following line of code:
+At the top of all the Pharen source files you want to use Pharenheit with, place the following line of code:
 
     ;<?php require '/path/to/pharenheit.php'; return; ?>
 
