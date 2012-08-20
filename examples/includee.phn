@@ -1,0 +1,4 @@
+;<?php require __DIR__ . '/../pharenheit.php'; return; ?>
+
+(fn greet-person (name)
+    (. "Hello " name "!"))
