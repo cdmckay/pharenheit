@@ -1,0 +1,5 @@
+<FilesMatch "(\.phn)$">
+    SetHandler application/x-httpd-php
+</FilesMatch>
+SetEnv HTTP_PHAREN_HOME "E:\Apps\Pharen"
+php_flag output_buffering on
