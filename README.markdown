@@ -2,7 +2,7 @@
 
 ## Overview
 
-Pharenheit allows you to develop in [http://scriptor.github.com/pharen/](Pharen) without the need to manually recompile
+Pharenheit allows you to develop in [Pharen](http://scriptor.github.com/pharen/) without the need to manually recompile
 after each change.  Pharenheit even allows you to `require` other `.phn` files directly in your Pharen source, without
 the need to precompile them first.
 
